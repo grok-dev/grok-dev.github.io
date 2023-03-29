@@ -151,6 +151,7 @@ footer {
   border-radius: 12px;
   max-height: 300px;
   max-width: 450px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .project-item span {
