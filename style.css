@@ -4,11 +4,12 @@
   --baby-powder: #f0f4ef;
   --payne-gray: #61707d;
   --lighter-gray: rgb(146, 158, 168);
+  --whitesmoke: rgba(245, 245, 245, 0.7);
 }
 
 html {
   scrollbar-width: thin;
-  scroll-behavior:smooth;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -81,17 +82,19 @@ footer {
 
 .hero h1 {
   color: var(--bright-blue);
-  font-size: clamp(14px, 5vw, 16px);
+  font-size: clamp(16px, 5vw, 18px);
   font-weight: 400;
 }
 
 .hero h2 {
   font-size: clamp(40px, 8vw, 80px);
-  color: var(--payne-gray);
+  color: var(--whitesmoke);
+  animation: hero-load 500ms ease-out;
 }
 
 .hero p {
   color: var(--lighter-gray);
+  animation: hero-load 650ms ease-in;
 }
 
 .about-description {
@@ -197,5 +200,15 @@ footer {
 
   .project-item img {
     max-width: 400px;
+  }
+}
+
+@keyframes hero-load {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
   }
 }
