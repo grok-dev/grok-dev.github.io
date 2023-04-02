@@ -4,135 +4,165 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>firstName | Web Developer</title>
+    <title>{firstname} | Web Developer</title>
     <link rel="stylesheet" href="style.css" />
-    <script></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet" />
   </head>
   <body>
-    <header id="header" class="header">
-      <nav>
+    <header id="header">
+      <nav class="primary-nav">
         <ul class="primary-nav-list">
           <li class="primary-nav-item">
-            <a href="#about"><span class="bright-blue">01.</span> About</a>
+            <a href="#skills"><span class="blue">01. </span>Skills</a>
           </li>
           <li class="primary-nav-item">
-            <a href="#projects"><span class="bright-blue">02.</span> Projects</a>
+            <a href="#projects"><span class="blue">02. </span>Projects</a>
           </li>
           <li class="primary-nav-item">
-            <a href="#contact"><span class="bright-blue">03.</span> Contact</a>
+            <a href="#contact"><span class="blue">03. </span>Contact</a>
           </li>
         </ul>
       </nav>
     </header>
     <main>
+      <div class="extras">
+        <div class="lines line-1"></div>
+        <div class="lines line-2"></div>
+        <img class="scroll-down-arrow" id="scroll-down-arrow" src="arrow-down.svg" alt="" />
+      </div>
       <section class="hero">
-        <h1>Hi, I'm</h1>
-        <h2>fName lName</h2>
-        <p>I'm a web developer.</p>
+        <h1 class="hero-title">Hi, I'm {name}.</h1>
+        <p class="hero-content">
+          I'm a developer who loves to tinker with automating tasks and designing & creating web pages.
+        </p>
+        <p>After a lifetime of interest in all things computers, I decided to officially begin my coding journey.</p>
       </section>
-      <section id="about" class="about">
-        <h2 class="numbered-heading"><span class="bright-blue">01.</span> About Me</h2>
-        <div class="about-description">
-          <p>
-            Hello! My name is fName and I enjoy tinkering with software and designing web pages. After a lifetime of
-            interest in all things software & Computer Science, I decided in 2022 to officially begin my coding journey.
-          </p>
-          <p>Here are some technologies I have experience with:</p>
-
-          <div class="about-list-container">
-            <p>Front End:</p>
-            <ul class="about-list">
-              <li>HTML</li>
-              <li>JavaScript</li>
-              <li>CSS</li>
-            </ul>
-
-            <p>Back End:</p>
-            <ul class="about-list">
-              <li>Python</li>
-            </ul>
-
-            <p>General Technologies:</p>
-            <ul class="about-list">
-              <li>Git</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      <section id="projects" class="projects">
-        <h2 class="numbered-heading"><span class="bright-blue">02. </span>Projects</h2>
-        <ul class="project-list">
-          <li class="project-item">
-            <img src="img.png" alt="" />
-            <div class="project-item-description-wrapper">
-              <h3>Project 1</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et natus necessitatibus ipsa, esse nam eius
-                laudantium ratione sed illo unde.
-              </p>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-              </ul>
-              <span>
-                <a href="">Github</a>
-                <a href="">Live</a>
-              </span>
-            </div>
+      <section class="skills" id="skills">
+        <h2 class="skills-header"><span class="blue">01. </span>Skills</h2>
+        <ul class="skills-list">
+          <li class="skills-list-item">
+            <img src="https://img.icons8.com/color/256/html-5.png" alt="html logo" />
+            <p class="skills-list-item-name">HTML</p>
           </li>
-          <li class="project-item">
-            <img src="img.png" alt="" />
-            <div class="project-item-description-wrapper">
-              <h3>Project 2</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et natus necessitatibus ipsa, esse nam eius
-                laudantium ratione sed illo unde.
-              </p>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-              </ul>
-              <span>
-                <a href="">Github</a>
-                <a href="">Live</a>
-              </span>
-            </div>
+          <li class="skills-list-item">
+            <img src="https://img.icons8.com/fluency/256/css3.png" alt="css logo" />
+            <p class="skills-list-item-name">CSS</p>
           </li>
-          <li class="project-item">
-            <img src="img.png" alt="" />
-            <div class="project-item-description-wrapper">
-              <h3>Project 3</h3>
-              <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et natus necessitatibus ipsa, esse nam eius
-                laudantium ratione sed illo unde.
-              </p>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JS</li>
-              </ul>
-              <span>
-                <a href="">Github</a>
-                <a href="">Live</a>
-              </span>
-            </div>
+          <li class="skills-list-item">
+            <img src="https://img.icons8.com/fluency/256/javascript.png" alt="javascript logo" />
+            <p class="skills-list-item-name">JavaScript</p>
+          </li>
+          <li class="skills-list-item">
+            <img src="https://img.icons8.com/fluency/256/python.png" alt="python logo" />
+            <p class="skills-list-item-name">Python</p>
+          </li>
+          <li class="skills-list-item">
+            <img src="git-logo.png" alt="github logo" />
+            <p class="skills-list-item-name">Git</p>
           </li>
         </ul>
       </section>
-      <section id="contact" class="contact">
-        <h2 class="numbered-heading"><span class="bright-blue">03. </span>Contact Me</h2>
-        <p>
-          If you are interested in hiring me or would like to say hello, feel free to contact! My inbox is always open,
-          and I'll get back to you soon!
-        </p>
-        <a class="contact-button" href="mailto:">Email Me</a>
+      <section class="projects" id="projects">
+        <h2 class="projects-header"><span class="blue">02. </span>Projects</h2>
+        <div class="project">
+          <h3 class="project-name">{project name}</h3>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores autem beatae perferendis excepturi.
+            Corporis esse voluptatem ratione quia consequatur aspernatur exercitationem ullam! Eum temporibus in
+            obcaecati dignissimos dolorem sed voluptatum.
+          </p>
+          <ul class="tech-list">
+            <li class="tech-item">HTML</li>
+            <li class="tech-item">CSS</li>
+            <li class="tech-item">JS</li>
+          </ul>
+          <ul class="external-link-list">
+            <li>
+              <a href="" class="external-link"><img src="./github.svg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="" class="external-link"><img src="./external-link.svg" alt="" class="external-link-img" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="project">
+          <h3 class="project-name">{project name}</h3>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores autem beatae perferendis excepturi.
+            Corporis esse voluptatem ratione quia consequatur aspernatur exercitationem ullam! Eum temporibus in
+            obcaecati dignissimos dolorem sed voluptatum.
+          </p>
+          <ul class="tech-list">
+            <li class="tech-item">HTML</li>
+            <li class="tech-item">CSS</li>
+            <li class="tech-item">JS</li>
+          </ul>
+          <ul class="external-link-list">
+            <li>
+              <a href="" class="external-link"><img src="./github.svg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="" class="external-link"><img src="./external-link.svg" alt="" class="external-link-img" /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="project">
+          <h3 class="project-name">{project name}</h3>
+          <p class="project-description">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores autem beatae perferendis excepturi.
+            Corporis esse voluptatem ratione quia consequatur aspernatur exercitationem ullam! Eum temporibus in
+            obcaecati dignissimos dolorem sed voluptatum.
+          </p>
+          <ul class="tech-list">
+            <li class="tech-item">HTML</li>
+            <li class="tech-item">CSS</li>
+            <li class="tech-item">JS</li>
+          </ul>
+          <ul class="external-link-list">
+            <li>
+              <a href="" class="external-link"><img src="./github.svg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="" class="external-link"><img src="./external-link.svg" alt="" class="external-link-img" /></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="contact-header"><span class="blue">03. </span>Contact</h2>
+        <div class="contact-content">
+          <div class="contact-left-col">
+            <div class="contact-text">
+              <h2>Available for opportunities</h2>
+              <p>Like what you see?</p>
+              <p>Contact me!</p>
+            </div>
+            <div class="contact-email">
+              <a href="mailto:">johnsmith@email.com</a>
+            </div>
+            <ul class="contact-link-list">
+              <li>
+                <a href="" class="external-link"><img src="./linkedin.svg" alt="" /> </a>
+              </li>
+              <li>
+                <a href="" class="external-link"><img src="./github.svg" alt="" /> </a>
+              </li>
+            </ul>
+          </div>
+          <p class="contact-right-col">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus enim facere beatae totam ex at nam fugiat
+            minus rem reiciendis. Sequi, amet cum rem dolores, nulla quas et necessitatibus autem quo laborum distinctio
+            explicabo dicta tempora ut nisi optio, dolorum ea dignissimos eum itaque pariatur obcaecati. Alias error
+            commodi porro veniam. Impedit rem officiis nihil distinctio obcaecati error neque alias sunt deserunt
+            tempora, accusamus voluptatibus dolores sed harum, libero ipsa nam nemo, architecto reiciendis eligendi
+            quasi. Aspernatur ab optio minima!
+          </p>
+        </div>
       </section>
     </main>
-    <footer>
-      <p>Built using HTML & CSS | &copy; 2023</p>
-    </footer>
+    <footer>Copyright 2023 | Designed and built in HTML, CSS, and JavaScript.</footer>
     <script src="script.js"></script>
   </body>
 </html>
