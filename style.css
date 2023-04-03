@@ -113,7 +113,7 @@ a {
 
 .skills-list-item-name {
   margin-top: 10px;
-  color: var(--highlight);
+  color: whitesmoke;
   font-weight: 700;
   background: linear-gradient(90deg, var(--bg-color) 0%, black 50%, var(--bg-color) 100%);
   background-repeat: no-repeat;
