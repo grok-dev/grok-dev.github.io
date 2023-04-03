@@ -154,7 +154,7 @@ a {
   border: 1px solid var(--powder-blue);
   border-radius: 1px;
   padding: 20px;
-  margin-bottom: 25px;
+  margin: 0 10px 25px;
 }
 
 .project-name {
