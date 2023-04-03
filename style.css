@@ -199,7 +199,7 @@ a {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 25px;
 }
 
 .contact-text {
@@ -233,12 +233,17 @@ a {
 }
 
 .contact-left-col {
-  flex: 2;
+  flex: 1;
 }
 
 .contact-right-col {
-  flex: 3;
+  flex: 1;
   min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 25px;
 }
 
 footer {
