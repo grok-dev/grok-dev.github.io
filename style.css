@@ -109,6 +109,7 @@ a {
 
 .skills-list-item img {
   padding: 5px;
+  aspect-ratio: 1;
 }
 
 .skills-list-item-name {
