@@ -44,7 +44,7 @@ body {
 
 section {
   max-width: 1000px;
-  margin: 0 auto 100px;
+  margin: 0 auto 75px;
 }
 
 a {
@@ -247,8 +247,11 @@ a {
 }
 
 footer {
-  text-align: center;
-  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px 0;
+  gap: 5px;
 }
 
 .blue,
