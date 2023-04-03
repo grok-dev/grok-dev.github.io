@@ -192,7 +192,7 @@ a {
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  /* background-color: #051d3f; */
+  background-color: var(--bg-color);
   border: 1px solid var(--powder-blue);
   border-radius: 1px;
   padding: 20px;
