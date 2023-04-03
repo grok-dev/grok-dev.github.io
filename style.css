@@ -353,7 +353,7 @@ footer {
 @keyframes hero-load {
   0% {
     transform: translateX(-300%);
-    opacity: 0;
+    opacity: 0%;
   }
 
   50% {
