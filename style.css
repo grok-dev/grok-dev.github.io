@@ -107,6 +107,14 @@ a {
   flex-direction: column;
 }
 
+.skills-list-item img {
+  padding: 5px;
+}
+
+.skills-list-item-name {
+  margin-top: 10px;
+}
+
 .skills-list-item-name,
 .skills-header,
 .projects-header,
