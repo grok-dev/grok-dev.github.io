@@ -2,14 +2,12 @@
 
 :root {
   --vivid-sky-blue: #57cbff;
-  --pale-purple: #e0d3de;
-  --periwinkle: #ccd6f6;
   --powder-blue: #a8b2d1;
   --bg-color: #020c1b;
   --highlight: #06d6a0;
-  /* --highlight: #d07be6; */
-  /* --hover-highlight: invert(59%) sepia(28%) saturate(1068%) hue-rotate(236deg) brightness(97%) contrast(85%); */
   --hover-highlight: invert(83%) sepia(51%) saturate(6228%) hue-rotate(120deg) brightness(100%) contrast(95%);
+  /* --highlight: #d07be6;
+  --hover-highlight: invert(59%) sepia(28%) saturate(1068%) hue-rotate(236deg) brightness(97%) contrast(85%); */
 }
 
 *,
@@ -32,7 +30,7 @@ header {
   width: 100%;
   padding: 10px;
   background-color: var(--bg-color);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 3px 15px;
 }
 
 #header {
@@ -60,7 +58,16 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  gap: 25px;
+  padding-left: 5vw;
+}
+
+.hero-title {
+  margin: 20px 0;
+  color: whitesmoke;
+}
+
+.hero-content {
+  max-width: 450px;
 }
 
 .skills-list,
@@ -72,9 +79,9 @@ a {
 
 .primary-nav-list {
   display: flex;
-  gap: 25px;
+  gap: 15px;
   justify-content: flex-end;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .primary-nav-item a:hover {
@@ -126,7 +133,7 @@ a {
 }
 
 .project {
-  max-width: 450px;
+  max-width: 600px;
   display: flex;
   flex-direction: column;
   /* background-color: #051d3f; */
@@ -137,7 +144,7 @@ a {
 }
 
 .project-name {
-  color: var(--periwinkle);
+  color: whitesmoke;
   font-size: 1.4rem;
 }
 
@@ -147,21 +154,21 @@ a {
 
 .tech-list {
   /* fixes odd lining up with image below */
-  margin-right: 2px;
-  margin-bottom: 15px;
+  /* margin-right: 2px;
+  margin-bottom: 15px; */
+}
+
+.external-link-list {
+  align-self: flex-end;
 }
 
 .tech-list,
 .external-link-list {
+  color: var(--highlight);
   list-style-type: none;
   display: flex;
   gap: 10px;
-  align-self: flex-end;
   font-size: 12px;
-}
-
-.tech-item {
-  /* color: var(--periwinkle); */
 }
 
 .external-link {
@@ -192,6 +199,10 @@ a {
   display: flex;
   flex-direction: column;
   gap: 15px;
+}
+
+.contact-text h2 {
+  color: whitesmoke;
 }
 
 .contact-email {
