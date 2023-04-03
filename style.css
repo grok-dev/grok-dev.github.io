@@ -65,8 +65,16 @@ a {
   color: whitesmoke;
 }
 
+.hero-title .blue {
+  animation: title-load 1500ms ease-out;
+}
+
 .hero-content {
   max-width: 450px;
+}
+
+.hero-content p {
+  animation: hero-load 800ms ease-out;
 }
 
 .skills-list,
@@ -136,7 +144,6 @@ a {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid lime; */
 }
 
 .skills-header,
@@ -198,7 +205,6 @@ a {
 .contact {
   /* Reset margin to centered to remove space between contact & footer */
   margin: 0 auto;
-  /* border: 1px solid lime; */
   border-bottom: 1px solid var(--powder-blue);
   border-radius: 1px;
 }
@@ -307,5 +313,43 @@ footer {
   .contact-text-head,
   .contact-email {
     font-size: 18px;
+  }
+}
+
+@keyframes hero-load {
+  0% {
+    transform: translateX(-300%);
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 10%;
+  }
+
+  90% {
+    opacity: 70%;
+  }
+
+  100% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+}
+
+@keyframes title-load {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
   }
 }
